@@ -1,0 +1,12 @@
+body{
+font-family: Arial;
+text-align:center;
+}
+
+#messages{
+list-style:none;
+}
+
+#reactions span{
+margin:5px;
+}
