@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>StreamLive</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="navbar">
+<h1 class="logo">STREAMLIVE</h1>
+</div>
+
+<div class="main-container">
+
+<div class="video-section">
+
+<h2>Live Video</h2>
+
+<div class="video-container">
+<iframe
+src="https://www.youtube.com/embed/e58DKJUDfPo"
+allowfullscreen>
+</iframe>
+</div>
+
+<div class="reactions" id="reactions">
+<button onclick="sendReaction('👍')">👍</button>
+<button onclick="sendReaction('🔥')">🔥</button>
+<button onclick="sendReaction('😂')">😂</button>
+<button onclick="sendReaction('❤️')">❤️</button>
+</div>
+
+</div>
+
+<div class="chat-section">
+
+<h3>Live Chat</h3>
+
+<ul id="messages"></ul>
+
+<div class="chat-box">
+<input id="messageInput" placeholder="Type a message">
+<button onclick="sendMessage()">Send</button>
+</div>
+
+</div>
+
+</div>
+
+<!-- Socket.io client -->
+<script src="/socket.io/socket.io.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
